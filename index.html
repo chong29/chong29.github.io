@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website | Chong Yun Xuan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --text-color: #34495e;
+            --bg-color: #f9f9f9;
+            --link-color: #3498db;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 90%;
+            background: white;
+            padding: 3rem;
+            margin: 2rem 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #eee;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin: 0;
+            font-size: 2.2rem;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+            margin-top: 0.5rem;
+        }
+
+        .links {
+            margin: 1.5rem 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: white;
+            background: var(--primary-color);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: opacity 0.3s;
+        }
+
+        .links a:hover {
+            opacity: 0.8;
+        }
+
+        section {
+            margin-top: 2rem;
+        }
+
+        h2 {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 0.5rem;
+            color: var(--primary-color);
+            font-size: 1.4rem;
+        }
+
+        ul {
+            padding-left: 1.2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            font-size: 0.8rem;
+            color: #bdc3c7;
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 600px) {
+            .container { padding: 1.5rem; }
+            h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <!-- <img src="./avatar.png" alt="Profile Picture" class="profile-pic"> -->
+        <h1>Chong Yun Xuan</h1>
+        <p class="subtitle"> Student @ Beijing Institute of Technology</p>
+
+        <div class="links">
+            <a href="mailto:chongyxuan4@gmail.com">Email</a>
+            <a href="https://github.com/chong29" target="_blank">GitHub</a>
+            <!-- <a href="https://scholar.google.com/citations?user=..." target="_blank">Google Scholar</a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> -->
+        </div>
+    </header>
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>Beijing Institute of Technology</strong>, Bachelor, Software Engineering, 2021 - 2026</li>
+
+        </ul>
+    </section>
+
+    <section id="research">
+        <h2>Research Interests</h2>
+        <ul>
+            <li>Tool Learning</li>
+            <li>NLP</li>
+        </ul>
+    </section>
+
+    <footer>
+        &copy; 2026 Chong Yun Xuan. Powered by GitHub Pages.
+    </footer>
+</div>
+
+</body>
+</html>
